@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>Radio Casma</title>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="keywords" content="Radio Platinum" />
+        <meta name="description" content="Radio Platinum" />
+        <meta name="theme-color" content="#fcff00" />
+        <meta name="author" content="By: Zambrano Sistem" />
+        <meta name="copyright" content="Radio Platinum 99.3 FM - Rock & Pop" />
+        <meta name="geo.placename" content="Radio Platinum 99.3 FM - Rock & Pop" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Radio Platinum" />
+        <meta property="og:url" content="https://radioplatinummas.com/" />
+        <meta property="og:title" content="Radio Platinum" />
+        <meta property="og:description" content="Radio Platinum 99.3 FM - Rock & Pop" />
+        <meta property="og:image" content="img/logo.png" />
+        <meta property="og:image:type" content="logo.png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="360" />
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="img/logo.png" />
+    <link href="css/style.css?v=1.0" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css?v=1.0" rel="stylesheet">
+    <link rel="manifest" href="manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/lunaradio-animado.js"></script>
+
+    <style>
+        html, body {
+            font-family: "Open Sans", sans-serif;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            color: #000000;
+        }
+        #installPopup {
+            display: none;
+            position: fixed;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(221, 221, 221, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+            text-align: center;
+            border-radius: 15px;
+        }
+        #installPopup button {
+            
+            background: #000000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="app.js" defer></script>
+    <link rel="icon" href="img/logo.png">
+    <link rel="manifest" href="manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <title>Radio Casma</title>
+</head>
+
+<body>
+    <div style="height:100vh">
+        <button type="button" class="mobile-nav-toggle"><i class="fas fa-bars"></i></button>
+        <header id="header">
+            <section>
+                <nav class="nav-menu">
+                    <ul>
+                        <p>Siguenos en la Redes</p>
+                        <li>
+                            <a href="https://www.facebook.com/radiocasmaoficial" target="_blank"><img src="img/facebook.png" alt="facebook" width="48" height="48"></a>
+                            <a href="https://www.instagram.com/radiocasma" target="_blank"><img src="img/instagram.png" alt="instagram" width="48" height="48"></a>
+
+
+                               <a href="https://www.tiktok.com/@radiocasma" target="_blank"><img src="img/tiktok.png" alt="instagram" width="48" height="48"></a>
+                               
+                            <a href="https://wa.me/51944402637" target="_blank"><img src="img/whatsapp.png" alt="whatsapp" width="48" height="48"></a>
+                            </li>
+                        <p>Radio Casma - Tu Mejor eleccion</p>
+                    </ul>
+                     </li>
+                        <p>Cel: 944402637</p>
+                    </ul>
+                     </li>
+                
+                        
+                          
+                        
+                        
+                        
+                    </ul>
+                </nav>
+            </section>
+            <section>
+
+            </section>
+        </header>
+
+        <div id="player"></div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div id="installPopup">
+        <p>Instala Nuestra Aplicacion a Tu Celular</p>
+        <button id="installAppButton">
+          <img src="img/img-instalar-app-android.png" alt="android" height="48"></a>
+          <img src="img/img-instalar-app-iphone.png" alt="iphone" height="48"></a>
+          <img src="img/img-instalar-app-windows.png" alt="windows" height="48"></a>
+        </button>
+        <div id="iosInstructions" style="display:none;">
+
+        </div>
+    </div>
+    <script>
+        $("#player").lunaradio({
+           userinterface: "big",
+	backgroundcolor: "rgba(0,17,59,1)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#f9d94a",
+	fontname: "Unica One",
+	googlefont: "Unica+One&display=swap",
+	fontratio: "0.6",
+	radioname: "SONANDO AHORA",
+	scroll: "true",
+	coverimage: "img/logo.png",
+	onlycoverimage: "false",
+	coverstyle: "animated",
+	usevisualizer: "real",
+	visualizertype: "6",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "",
+	ownmetadataurl: "",
+	streamurl: "https://radio.livestreamingmundial.com:7110",
+	streamtype: "shoutcast2",
+	icecastmountpoint: "",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiojarid: "",
+	radiocoid: "sdef46f462",
+	shoutcastpath: "/live",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "10000",
+	volume: "100",
+	autoplay: "true",
+	debug: "false",
+	usestreamcorsproxy: "false",
+
+});
+
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('installPopup').style.display = 'block';
+        });
+
+        document.getElementById('installAppButton').addEventListener('click', async () => {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('installPopup').style.display = 'none';
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`User response to the install prompt: ${outcome}`);
+                deferredPrompt = null;
+            }
+        });
+
+        document.getElementById('overlay').addEventListener('click', () => {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('installPopup').style.display = 'none';
+        });
+
+        function isIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        }
+
+        if (isIOS()) {
+            document.getElementById('installAppButton').style.display = 'none';
+            document.getElementById('iosInstructions').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('installPopup').style.display = 'block';
+        }
+    </script>
+    <footer style="display:grid;align-content:end">
+        <div style="background-color:#000000;color:#fff;text-align:center;padding:5px">
+            &copy;<a href="http://wa.me/51944402637">App Pwa Desarrollado Por: Live Streaming Mundial Cel. 944402637</a>
+        </div>
+        <script>
+            $(".mobile-nav-toggle").click(function () {
+                $("body").toggleClass("mobile-nav-active");
+                $(".mobile-nav-toggle i").toggleClass("fa-bars fa-times");
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
