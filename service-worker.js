@@ -1,11 +1,12 @@
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('nombre-cache').then((cache) => {
+    caches.open('v1').then((cache) => {
       return cache.addAll([
         '/',
-        '/index.html',  // Asegúrate de que este archivo esté disponible
-        'https://imgur.com/73N7Df1.png', // Cambia esto con la ruta de tu ícono
-        'https://imgur.com/73N7Df1.png'  // Cambia esto con la ruta de tu ícono
+        '/index.html',
+        'https://imgur.com/wsCqUtC.png',
+        'https://imgur.com/wsCqUtC.png',
+        // Agrega otros recursos que quieras cachear
       ]);
     })
   );
