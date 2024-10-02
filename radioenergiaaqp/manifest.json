@@ -1,0 +1,21 @@
+{
+  "short_name": "Radio Energia Arequipa",
+  "name": "Radio Energia Arequipa",
+  "icons": [
+    {
+      "src": "https://imgur.com/wsCqUtC.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "description": "Radio Energia Arequipa",
+  "start_url": "https://www.radioenergiaarequipa.com/",
+  "scope": "https://www.radioenergiaarequipa.com/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#ffe100",
+  "background_color": "#ffe100",
+  "lang": "es",
+  "prefer_related_applications": false
+}
